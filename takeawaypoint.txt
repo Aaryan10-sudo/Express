@@ -1,0 +1,16 @@
+/*CRUD
+C => Create => Create
+R => Read / Readall => ReadSpecific = findById / Readall = findById
+U => Update => findByIdAndUpdate
+D => Delete => findByIdAndDelete
+
+API => Defining task for each request
+
+Backend flow : 
+    schema
+    model
+    contoller
+    router
+    index
+
+
