@@ -1,6 +1,10 @@
 import { Router } from "express";
-import { createProductController } from "../controller/productController.js";
+import {
+  createProductController,
+  findAllProductController,
+} from "../controller/productController.js";
 
 let productRouter = Router();
 productRouter.route("/product").post(createProductController);
+productRouter.route("/read").get(findAllProductController);
 export default productRouter;

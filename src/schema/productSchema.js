@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 let product = new mongoose.Schema({
   productName: {
     type: String,
-    required: [true, "Product name is required"],
+    required: [true, "productName is required"],
   },
   quantity: {
     type: Number,

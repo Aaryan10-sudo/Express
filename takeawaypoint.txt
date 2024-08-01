@@ -14,3 +14,10 @@ Backend flow :
     index
 
 
+    
+    college
+    department
+    students
+    trainee
+    bike
+
