@@ -15,4 +15,5 @@ userRouter.route("/user").get(findAllUserController);
 userRouter.route("/:id").get(findSpecificUserController);
 userRouter.route("/:id").patch(updateUserController);
 userRouter.route("/:id").delete(deleteUserController);
+
 export default userRouter;

@@ -20,8 +20,8 @@ let webUserSchema = new mongoose.Schema({
     type: String,
     required: [true, "address field is required"],
   },
-  isMarried: {
-    type: Boolean,
+  isVerifiedEmail: {
+    type: String,
     required: [true, "isMarried field is required"],
   },
 });

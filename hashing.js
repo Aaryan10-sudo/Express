@@ -1,9 +1,12 @@
 import bcrypt from "bcrypt";
 let password = "aaryan@123";
 let hashedPassword = await bcrypt.hash(password, 10);
-console.log(hashedPassword);
+// console.log(hashedPassword);
 
 //compare hash code. compare always gives boolean value
 let loginPassword = "aaryan@123";
 let validPassword = await bcrypt.compare(loginPassword, hashedPassword);
-console.log(validPassword);
+// console.log(validPassword);
+console.log(
+  validPassword === true ? "You are Authorized" : "You are not authorized"
+);

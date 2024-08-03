@@ -13,8 +13,24 @@ Backend flow :
     router
     index
 
+//Response status code
 
-    
+Informational Response - (100-199)
+Successful response - (200-299)
+Redirection message - (300 - 399)
+Client error response - (400 - 499)
+Server error Response -  (500-599)
+
+200-OK
+201-Created
+
+400-Bad request
+401-Unauthorized
+403-Forbidden
+404-Not Found
+
+500-Internal Server Error
+
     college
     department
     students
