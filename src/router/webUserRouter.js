@@ -5,13 +5,20 @@ import {
   findAllWebUserController,
   findSpecificWebUser,
   updateWebUser,
+  verifyMailController,
 } from "../controller/webUserController.js";
 
 let webUserRouter = Router();
-webUserRouter.route("/").post(createWebUserController);
-webUserRouter.route("/").get(findAllWebUserController);
+webUserRouter
+  .route("/")
+  .post(createWebUserController)
+  .get(findAllWebUserController);
 
-webUserRouter.route("/:id").get(findSpecificWebUser);
-webUserRouter.route("/:id").patch(updateWebUser);
-webUserRouter.route("/:id").delete(deleteWebUser);
+webUserRouter.route("/verify-mail").post(verifyMailController);
+
+webUserRouter
+  .route("/:id")
+  .get(findSpecificWebUser)
+  .patch(updateWebUser)
+  .delete(deleteWebUser);
 export default webUserRouter;

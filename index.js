@@ -7,6 +7,7 @@ import emplooyeRouter from "./src/router/classroomRouter.js";
 import teacherRouter from "./src/router/teacherRouter.js";
 import webUserRouter from "./src/router/webUserRouter.js";
 import collegeRouter from "./src/router/collegeRouter.js";
+import testRouter from "./src/router/testRouter.js";
 connectDB();
 
 const app = express();
@@ -20,6 +21,7 @@ app.use("/home", emplooyeRouter);
 app.use("/teacher", teacherRouter);
 app.use("/web-user", webUserRouter);
 app.use("/college", collegeRouter);
+app.use("/test", testRouter);
 
 app.listen(port, () => {
   console.log(`express is running at port ${port}`);

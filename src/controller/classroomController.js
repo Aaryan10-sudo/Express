@@ -47,3 +47,37 @@ export const findSpecificClassroomController = async (req, res, next) => {
     });
   }
 };
+
+export const updateClassroomController = async (req, res, next) => {
+  try {
+    let result = await Classroom.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    res.json({
+      success: true,
+      message: "Update successfull",
+      data: result,
+    });
+  } catch (error) {
+    res.json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
+export const deleteClassroomController = async () => {
+  try {
+    let result = await Classroom.findByIdAndDelete(req.params.id);
+    res.json({
+      success: true,
+      message: "Deleted successfully",
+      data: result,
+    });
+  } catch (error) {
+    res.json({
+      success: false,
+      messsage: error.message,
+    });
+  }
+};

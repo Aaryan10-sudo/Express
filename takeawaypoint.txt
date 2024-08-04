@@ -31,7 +31,6 @@ Server error Response -  (500-599)
 
 500-Internal Server Error
 
-    college
     department
     students
     trainee

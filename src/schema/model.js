@@ -6,11 +6,13 @@ import userSchema from "./userSchema.js"; //importing from file must include .js
 import mongoose from "mongoose";
 import webUserSchema from "./webUserSchema.js";
 import collegeSchema from "./collegeSchema.js";
+import testSchema from "./testSchema.js";
 
 export const User = mongoose.model("User", userSchema);
 export const Product = mongoose.model("Product", product);
-export const Book = mongoose.model("Test", bookSchema);
+export const Book = mongoose.model("Book", bookSchema);
 export const Classroom = mongoose.model("Classroom", employeeSchema);
 export const Teacher = mongoose.model("Teacher", teacherSchema);
 export const WebUser = mongoose.model("WebUser", webUserSchema);
 export const College = mongoose.model("College", collegeSchema);
+export const Test = mongoose.model("Test", testSchema);
