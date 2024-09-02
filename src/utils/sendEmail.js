@@ -7,8 +7,8 @@ let transporterInfo = {
   secure: false,
   auth: {
     //Note: user and pass must be genuine
-    user: "lazyfox916@gmail.com",
-    pass: "qnvb msso uhyw gglm",
+    user: "Your Gmail Account here",
+    pass: "make sure to use app password",
   },
 };
 
